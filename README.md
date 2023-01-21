@@ -35,7 +35,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Habits é um app para ajudar a rastrear os hábitos.
 
-- [Visite o projeto online](https://denifercruz.github.io/habits-web/)
+- [Visite o projeto online](https://denifercruz.github.io/habit-tracker/)
 
 ## 🔖 Layout
 
