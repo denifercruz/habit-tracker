@@ -1,0 +1,145 @@
+
+/* DEFAULT SETTING*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+
+body{
+  background-color: rgba(9, 9, 10, 1);
+  color: white;
+  
+  height: 100vh;
+}
+
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* put spaces between header elements */
+
+  padding: 48px;
+
+  position: fixed; /* to fix the header on the page */
+  width: 100%;
+
+  background-color: rgba(9, 9, 10, 1);
+
+}
+
+
+button {
+
+padding: 16px 24px;/*FIGMA*/
+border-radius: 8px; /*FIGMA*/
+border: 1px solid #8B5CF6; /*FIGMA*/
+background-color: transparent;
+color: white;
+
+display: flex;
+align-items: center;
+gap: 12px;
+
+
+font-family: 'Inter';/*FIGMA*/
+font-weight: 600;/*FIGMA*/
+font-size: 16px;/*FIGMA*/
+line-height: 125%;/*FIGMA*/
+
+}
+
+#form-habits{
+  display: flex;
+  padding: 182px 48px 48px; /* putting spaces in the form-habits box, I had to change the top space (which was 0) because the header occupied 182px in height*/
+
+  width: fit-content; /*fitting the content to the width*/
+}
+
+.habits{
+
+  display: flex;
+
+  flex-direction: column;
+
+  margin-top: 60px;
+  gap: 24px;/*FIGMA*/
+
+}
+
+.habit{
+
+  width: 64px;
+  height: 64px;
+
+  font-size: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center; /* put the images in the middle */
+
+}
+
+/* day wraps the day boxes*/
+.days{
+  display: flex;
+  margin-left: 32px;
+  gap: 48px;
+}
+.day{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  
+}
+
+/* getting only the dates (dd/mm)*/
+.day div{
+  margin-bottom: 8px;
+
+  font-family: 'Roboto Mono';
+
+  font-size: 20px;
+  line-height: 125%;
+
+  color: #A1A1AA;
+
+  text-align: center;
+
+}
+
+input{
+
+ appearance: none; /* remove the appearance of the input */
+ -webkit-appearance: none; /*to accept in both Safari and Chrome*/
+
+  width: 64px; /*FIGMA*/
+  height: 64px;/*FIGMA*/
+  border: 2px solid #A78BFA;/*FIGMA*/
+  border-radius: 8px;/*FIGMA*/
+
+  background: #18181B;/*FIGMA*/
+
+}
+
+/*pseudo-selector*/
+input:checked{
+
+  background: #8B5CF6;/*FIGMA*/
+  border: 2px solid #A78BFA;/*FIGMA*/
+ 
+
+}
+
+/* CORRECTING FOR SMARTPHONE */
+@media(max-width: 570px){
+  button div{
+    display: none;
+  }
+
+}
+
